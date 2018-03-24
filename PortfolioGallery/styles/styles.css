@@ -107,7 +107,7 @@ footer {
 
 .overlay {
     display: none;
-    background-color: rgba(3,137,156, 0.8);
+    background-color: rgba(3, 137, 156, 0.8);
     color: white;
     position: absolute;
     top: 0;
@@ -124,4 +124,33 @@ footer {
 .overlay h3 {
     margin: 0;
     padding: 0;
+}
+
+@media (max-width: 768) {
+    .logo,
+    nav {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    nav ul,
+    nav li {
+        padding: 0;
+        float: none;
+    }
+    nav li {
+        margin-bottom: 15px;
+    }
+    #gallery li {
+        width: 48%;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 568px) {
+    /* or less*/
+    #gallery li {
+        width: 100%;
+        margin-right: 0;
+    }
 }
