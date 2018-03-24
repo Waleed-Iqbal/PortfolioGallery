@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     color: #666;
     line-height: 1.6em;
 }
@@ -103,4 +103,25 @@ footer {
     color: white;
     padding-top: 10px;
     text-align: center;
+}
+
+.overlay {
+    display: none;
+    background-color: rgba(3,137,156, 0.8);
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.overlay h3 {
+    margin: 0;
+    padding: 0;
 }
