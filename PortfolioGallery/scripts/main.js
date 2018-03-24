@@ -29,6 +29,7 @@ $(document).ready(function () {
     $("ul#gallery li").on("mouseenter", function () {
 
         // Reading data attributes
+        $(this).children(".overlay").remove();
         var title = $(this).children().data("title");
         var desc = $(this).children().data("desc");
 
